@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "cd client && yarn --production=false && yarn build",
+    "heroku-postbuild": "yarn --production=false && yarn build",
     "deploy": "git add . && git ci -m 'ci' && git push heroku master",
     "push": "git add . && git ci -m 'ci' && git push -u origin master"
   },
