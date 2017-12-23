@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "yarn --production=false && next build",
     "deploy": "git add . && git ci -m 'ci' && git push heroku master",
